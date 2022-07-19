@@ -17,7 +17,7 @@ public class CartService {
         listItem.add(item);
 
         item = new Item();
-        item.setItemName("Nike Flynite");
+        item.setItemName("Nike Flynit");
         item.setQuantity(10);
         listItem.add(item);
 
