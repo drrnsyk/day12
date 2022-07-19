@@ -12,13 +12,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping(path = {"/cart"})
 public class CartController {
 
+    // method for dynamic page
     @GetMapping(produces = {"text/html"})
     public String displayCart (Model model) {
         
         CartService cs = new CartService();
         List<Item> cartItems = cs.getCartItems();
-        model.addAttribute("cart", cartItems);
+        model.addAttribute("cartItems", cartItems); // attribute name
 
+        // return html view
         return "cart";
     }
     

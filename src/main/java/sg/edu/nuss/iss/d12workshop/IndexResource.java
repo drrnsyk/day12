@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping(path= {"/indexresource", "/indexresource.html"})
 public class IndexResource {
 
-    // 
+    // method for dynamic page
     @GetMapping(produces = {"text/html"})
     public String index(Model model) {
         model.addAttribute("currTime", (new Date()).toString());
