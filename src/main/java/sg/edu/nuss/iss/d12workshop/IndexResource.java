@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 // create controller class
 @Controller
 // set the request mapping to the path, / for e.g localhost:8080/
+// this mapping is to tell when do you enter into this controller
 @RequestMapping(path= {"/indexresource", "/indexresource.html"})
 public class IndexResource {
 
